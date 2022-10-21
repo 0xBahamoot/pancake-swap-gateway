@@ -428,7 +428,7 @@ export const BSC_MAINNET_CONFIGS = {
 // testnet
 export const BSC_TESTNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
-  incBSCContractAddress: '0x4cF1d43999606858BaC64B7DbFC196fb4A6853af',
+  incBSCContractAddress: '0x1b6a3d5b5dcdf7a37cfe35cebc0c4bd28ea7e946',
 };
 export const PANCAKE_TESTNET_CONFIGS = {
   routerV2: '0x26ec2aFBDFdFB972F106100A3deaE5887353d9B9',
