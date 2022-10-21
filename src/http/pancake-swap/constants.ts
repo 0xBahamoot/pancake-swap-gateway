@@ -427,7 +427,7 @@ export const BSC_MAINNET_CONFIGS = {
 
 // testnet
 export const BSC_TESTNET_CONFIGS = {
-  host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
+  host: 'https://testnet.aurora.dev', //String(process.env.JSON_RPC_PROVIDER_POLYGON),
   incBSCContractAddress: '0x1b6a3d5b5dcdf7a37cfe35cebc0c4bd28ea7e946',
 };
 export const PANCAKE_TESTNET_CONFIGS = {
