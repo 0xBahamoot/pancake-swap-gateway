@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { JSBI, Pair, Token, TokenAmount, Trade } from '@trisolaris/sdk';
+import { ChainId as A, JSBI, Pair, Token, TokenAmount, Trade } from '@trisolaris/sdk';
 import { ethers } from 'ethers';
 import express from 'express';
 // @ts-ignore
@@ -168,24 +168,42 @@ export class PancakeSwapRoutesConfig extends CommonRoutesConfig {
       ) {
         token1 = listPairExist[i / 2]?.token0;
       }
-      const token0Ins = new Token(
-        pancakeChainID,
+
+      console.log("token0====>", token0)
+
+      const _Token = Token as any;
+      // @ts-ignore
+      const token0Ins = new _Token(
+        // pancakeChainID,
+        A.AURORA,
         token0,
         listTokenDecimals[toLower(token0)].decimals,
-        listTokenDecimals[toLower(token0)].symbol
+        listTokenDecimals[toLower(token0)].symbol,
+        "",
       );
-      const token1Ins = new Token(
-        pancakeChainID,
+
+      // @ts-ignore
+      const token1Ins = new _Token(
+        // pancakeChainID,
+        A.AURORA,
         token1,
         listTokenDecimals[toLower(token1)].decimals,
-        listTokenDecimals[toLower(token1)].symbol
+        listTokenDecimals[toLower(token1)].symbol,
+        "",
       );
 
       const tkca1 = new TokenAmount(token0Ins, reserve0);
       const tkca2 = new TokenAmount(token1Ins, reserve1);
 
-      const pair = new Pair(tkca1, tkca2, pancakeChainID);
+      console.log("tkca1", tkca1)
+      console.log("tkca2", tkca2)
+
+      console.log("pancakeChainID", pancakeChainID)
+
+      const pair = new Pair(tkca1, tkca2, A.AURORA);
+
       pairList.push(pair);
+      
     }
     const sellOriginalAmount = convert.toOriginalAmount({
       humanAmount: amount,
@@ -193,17 +211,26 @@ export class PancakeSwapRoutesConfig extends CommonRoutesConfig {
     });
 
     const sellAmount = JSBI.BigInt(sellOriginalAmount);
-    const seltTokenInst = new Token(
-      pancakeChainID,
+    const _Token = Token as any;
+
+    const seltTokenInst = new _Token(
+      // pancakeChainID,
+      A.AURORA,
       sourceToken.contractIdGetRate,
       sourceToken.decimals,
-      sourceToken.symbol
+      sourceToken.symbol,
+      ""
     );
-    const buyTokenInst = new Token(
-      pancakeChainID,
+
+    //constructor(chainId: ChainId, address: string, decimals: number, symbol?: string, name?: string);
+
+    const buyTokenInst = new _Token(
+      // pancakeChainID,
+      A.AURORA,
       destToken.contractIdGetRate,
       destToken.decimals,
-      destToken.symbol
+      destToken.symbol,
+      ""
     );
 
     const tkca1 = new TokenAmount(seltTokenInst, sellAmount);
