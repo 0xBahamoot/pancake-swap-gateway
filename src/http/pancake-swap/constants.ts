@@ -430,5 +430,5 @@ export const BSC_MAINNET_CONFIGS = {
 };
 export const BSC_TESTNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
-  incBSCContractAddress: "0x43D037A562099A4C2c95b1E2120cc43054450629",
+  incBSCContractAddress: '0x43D037A562099A4C2c95b1E2120cc43054450629',
 };
