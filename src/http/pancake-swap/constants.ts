@@ -415,14 +415,14 @@ export const PANCAKE_ABI: any = [
 // joe avax config:
 // mainnet
 export const PANCAKE_MAINNET_CONFIGS = {
-  routerV2: '0x10ed43c718714eb63d5aa57b78b54704e256024e',
-  chainID: 56,
-  factoryAddress: '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73',
-  multiCallContract: '0xff6fd90a470aaa0c1b8a54681746b07acdfedc9b',
+  routerV2: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
+  chainID: 43114,
+  factoryAddress: '0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10',
+  multiCallContract: '0x0fb54156b496b5a040b51a71817aed9e2927912e',
 };
 export const BSC_MAINNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
-  incBSCContractAddress: '0x43D037A562099A4C2c95b1E2120cc43054450629',
+  incBSCContractAddress: '0xDCd29f325060F8e9F6c21671aDC74dabD0fD5Ff5',
 };
 
 // testnet
