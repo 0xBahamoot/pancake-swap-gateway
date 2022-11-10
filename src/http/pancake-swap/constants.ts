@@ -415,14 +415,14 @@ export const PANCAKE_ABI: any = [
 // trisolaris aurora config:
 // mainnet (todo update later)
 export const PANCAKE_MAINNET_CONFIGS = {
-  routerV2: '0x10ed43c718714eb63d5aa57b78b54704e256024e',
-  chainID: 56,
-  factoryAddress: '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73',
-  multiCallContract: '0xff6fd90a470aaa0c1b8a54681746b07acdfedc9b',
+  routerV2: '0x2CB45Edb4517d5947aFdE3BEAbF95A582506858B',
+  chainID: 1313161554,
+  factoryAddress: '0xc66F594268041dB60507F00703b152492fb176E7',
+  multiCallContract: '0x49eb1F160e167aa7bA96BdD88B6C1f2ffda5212A',
 };
 export const BSC_MAINNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
-  incBSCContractAddress: '0x43D037A562099A4C2c95b1E2120cc43054450629',
+  incBSCContractAddress: '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB',
 };
 
 // testnet
