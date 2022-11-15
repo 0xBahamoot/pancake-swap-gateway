@@ -418,11 +418,11 @@ export const PANCAKE_MAINNET_CONFIGS = {
   routerV2: '0x60aE616a2155Ee3d9A68541Ba4544862310933d4',
   chainID: 43114,
   factoryAddress: '0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10',
-  multiCallContract: '0x0fb54156b496b5a040b51a71817aed9e2927912e',
+  multiCallContract: '0x11f8d0ee7122f28a56853c152FaC3B17c71E2649',
 };
 export const BSC_MAINNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
-  incBSCContractAddress: '0xDCd29f325060F8e9F6c21671aDC74dabD0fD5Ff5',
+  incBSCContractAddress: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
 };
 
 // testnet
