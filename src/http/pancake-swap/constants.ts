@@ -418,7 +418,7 @@ export const PANCAKE_MAINNET_CONFIGS = {
   routerV2: '0x2CB45Edb4517d5947aFdE3BEAbF95A582506858B',
   chainID: 1313161554,
   factoryAddress: '0xc66F594268041dB60507F00703b152492fb176E7',
-  multiCallContract: '0x49eb1F160e167aa7bA96BdD88B6C1f2ffda5212A',
+  multiCallContract: '0x62c33e931915fcd930850ea97d969d645d128c7b',
 };
 export const BSC_MAINNET_CONFIGS = {
   host: String(process.env.JSON_RPC_PROVIDER_POLYGON),
