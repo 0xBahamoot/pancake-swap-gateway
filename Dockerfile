@@ -8,7 +8,7 @@ WORKDIR /usr/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install -g npm
+# RUN npm install -g npm
 
 RUN npm install
 RUN npm install -g pm2
